@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="image/fav.png">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <title>IA</title>
+</head>
+<body>
+    <nav class="nav-area">
+        <div class="nav-container">
+        <div class="site-logo">
+            <link rel="icon" href="image/fav.png">
+            <link rel="stylesheet" href="css/style2.css">
+        <a href="#">Intelligence artificielle<span>(IA)</span></a></div>
+        <div class="mobile-nav">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="site-nav-menu">
+            <ul class="primary-menu">
+                <li><a href="index.html" class="">Accueil</a></li>
+                <li><a href="about.html" class="active">à propos</a></li>
+                <li><a href="services.html" class="">Services</a></li>
+                <li><a href="exemple.html" class="">Exemple</a></li>
+                <li><a href="Langage.html" class="">Langage</a></li>
+                <li><a href="contact.html" class="">Contact</a></li>
+    
+            </ul>
+        </div>
+    
+    </div>
+    </nav>
+
+ <section class="about r-p" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 way-fade-up">
+       <!-- <video controls width="500" height="300" autoplay loop><source src="C:\Users\Malek\Downloads\Rudra\Rudra\images\videoia.mp4"/>
+        </video>-->
+        <div class="videowidth">
+          <!--  <video controls autoplay loop width="100%">-->
+        <video  width="100%">
+            <source  src="C:\Users\Malek\Downloads\Rudra\Rudra\images\videoia.mp4" type="video/mp4">
+        </video>
+    </div>
+        <script>
+            $(document).ready(function(){
+                $(".videowidth").hover(function(){
+                    $(this).children("video")[0].play();       
+                  },
+                  function(){
+                    $(this).children("video")[0].pause();       
+                  });
+            });
+        </script>
+            </div>
+        <div class="col-lg-6 way-fade-up mt-5 mt-lg-0">
+
+        <h4 >Une définition de intelligence artificielle(IA) ?</h4>
+<p>L'intelligence artificielle (IA, ou AI en anglais pour Artificial Intelligence) consiste à mettre en œuvre un certain nombre de techniques visant à permettre aux machines d'imiter une forme d'intelligence réelle.<br> L'IA se retrouve implémentée dans un nombre grandissant de domaines d'application.
+
+ <br> La notion voit le jour dans les années 1950 grâce au mathématicien Alan Turing. Dans son livre Computing Machinery and Intelligence, ce dernier soulève la question d'apporter aux machines une forme d'intelligence. Il décrit alors un test aujourd'hui connu sous le nom « Test de Turing » dans lequel un sujet interagit à l'aveugle avec un autre humain, puis avec une machine programmée pour formuler des réponses sensées. Si le sujet n'est pas capable de faire la différence, alors la machine a réussi le test et, selon l'auteur, peut véritablement être considérée comme « intelligente ».
+  
+ </p>   
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+  <footer>
+    <div class="container h-100 d-flex align-items-center justify-content-center">
+      <div class="row">
+        <div class="col">
+          <div class="r-icon text-center mt-3">
+            <ul>
+              <li class="list-inline-item animated slideInUp"><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li class="list-inline-item animated slideInUp"><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item animated slideInUp"><a href="#"><i class="fab fa-behance"></i></a></li>
+              <li class="list-inline-item animated slideInUp "><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+          <p class="text-muted" style="font-size:14px;">&copy; copyright AI | 2018 All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

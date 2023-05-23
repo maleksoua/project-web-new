@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="image/fav.png">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA</title>
+
+
+    <script language="javascript">
+        function subscribe() {
+          var name=document.getElementById("name");
+          var mail=document.getElementById("mail");
+          feedback=document.getElementById("feedback");
+          if (name.value=="") {
+            name.style.borderColor="red";
+            alert("Please write your name");
+          }
+          else{
+            name.style.borderColor="white";
+          }
+          if (mail.value=="") {
+            mail.style.borderColor="red";
+            alert("Please write your Email adress");
+          }
+          else{
+          if(mail.value.indexOf('@')<=0){
+            mail.style.borderColor="red";
+            alert("Please verify your Email adress");
+      }
+      else{
+        mail.style.borderColor="white";
+      }
+        }
+      if ((name.value!="") && (mail.value!="")&&(mail.value.indexOf('@')>0)) {
+        alert("your message is send successfully");
+        }
+      }
+      
+  
+      </script>
+</head>
+<body>
+    <nav class="nav-area">
+        <div class="nav-container">
+        <div class="site-logo">
+            <link rel="icon" href="image/fav.png">
+            <link rel="stylesheet" href="css/style1.css">
+        <a href="#">Intelligence artificielle<span>(IA)</span></a></div>
+        <div class="mobile-nav">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="site-nav-menu">
+            <ul class="primary-menu">
+                <li><a href="index.html" class="">Accueil</a></li>
+                <li><a href="about.html" class="">à propos</a></li>
+                <li><a href="services.html" class="">Services</a></li>
+                <li><a href="exemple.html" class="">Exemple</a></li>
+                <li><a href="Langage.html" class="">Langage</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+    
+            </ul>
+        </div>
+    
+    </div>
+    </nav>
+    <section>
+<div class="bac">
+    <div class="wrapper">
+    <div class="contact-top">
+    <div class="contact-image"></div>
+</div>
+    <div class="contact-bottom">
+        <div class="profile-infos">
+        <div class="main-infos">
+            <h1>Contact</h1>
+            <form >
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <br>
+                  <input type="text" id="name" required/>
+                
+                </div>
+                <div class="form-group">
+                    <label for="mail">Your Email</label>
+                    <br>
+                  <input type="text" placeholder="exemple@exemple.com" id="mail" required/>
+              
+                </div>
+                <div class="form-group">
+                    <br>
+                  <textarea name="" placeholder="Share your feedback" id="feedback" cols="30" rows="3"></textarea>
+                </div>
+                <input type="button" value="Send" class="submit" onclick="subscribe()">
+              </form>
+    </div>
+    </div>
+    </div>
+</div>
+</section>
+<footer>
+  <div class="container h-100 d-flex align-items-center justify-content-center">
+    <div class="row">
+      <div class="col">
+        <div class="r-icon text-center mt-3">
+          <ul>
+            <li class="list-inline-item animated slideInUp"><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item animated slideInUp"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item animated slideInUp"><a href="#"><i class="fab fa-behance"></i></a></li>
+            <li class="list-inline-item animated slideInUp "><a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <p class="text-muted" style="font-size:14px;">&copy; copyright AI | 2018 All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/appact.js"></script>
+
+</body>
+</html>
